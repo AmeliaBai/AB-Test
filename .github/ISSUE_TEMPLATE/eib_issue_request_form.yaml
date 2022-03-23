@@ -57,7 +57,7 @@ body:
   - type: checkboxes
     id: Inform_Others
     attributes:
-      label: Template
+      label: Relevant Party
       description: Please notify all teams who will be affected by this change prior to making any changes in production
       options:
         - label: IT team (@Shopify/okta-team)
@@ -71,7 +71,7 @@ body:
   - type: textarea
     id: Inform_Others_2
     attributes:
-      label: Template_2
+      label: Relevant Party (Alternative way)
       description: Another way to inform all parties:IT team (@Shopify/okta-team); Vault team (@Shopify/vault-tools), People Analytics (@Shopify/people-analytics),  (@Shopify/it-device-identity)
       placeholder: Please copy paste the relevant party from abover here
     validations:
