@@ -60,11 +60,19 @@ body:
       label: Template
       description: Please notify all teams who will be affected by this change prior to making any changes in production
       options:
-        - IT team (@Shopify/okta-team)
+        - label: IT team (@Shopify/okta-team)
         - label: Vault team (@Shopify/vault-tools)
         - label: People Analytics (@Shopify/people-analytics)
         - label: (@Shopify/it-device-identity)
         - label: Compensation Team
         - label: Finance Team
+    validations:
+      required: true
+  - type: textarea
+    id: Inform_Others_2
+    attributes:
+      label: Template_2
+      description: Another way to inform all parties:IT team (@Shopify/okta-team); Vault team (@Shopify/vault-tools), People Analytics (@Shopify/people-analytics),  (@Shopify/it-device-identity)
+      placeholder: Please copy paste the relevant party from abover here
     validations:
       required: true
