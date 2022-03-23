@@ -66,5 +66,5 @@ body:
         - label: @ Shopify/it-device-identity
         - label: Compensation Team
         - label: Finance Team
-     validations:
+    validations:
       required: true
