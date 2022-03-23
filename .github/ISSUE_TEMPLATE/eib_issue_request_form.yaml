@@ -1,0 +1,85 @@
+name: New Integration Request
+description: Request a new integration that will connect two or more systems.
+title: "[New Integration]: "
+labels: [ "new integration" ]
+body:
+  - type: markdown
+    attributes:
+      value: |+
+        This form is for requesting the development of a new integration that will connect two or more business systems.
+
+        Please fill out the fields with as much detail as possible, ensuring that there is sufficient context for the System Integrations team to understand your area of the business, your process, and the impact you're trying to make.
+        <br />
+  - type: input
+    id: team
+    attributes:
+      label: Team
+      description: Which team is requesting this integration?
+      placeholder: e.g., Finance
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: Describe what you are trying to achieve or what problem you're trying to solve.
+      placeholder: Insert text here...
+    validations:
+      required: true
+  - type: textarea
+    id: enable
+    attributes:
+      label: What would building this automation enable for stakeholders?
+      description: Include downstream effects.
+      placeholder: Insert text here...
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Measurable Impact
+      description: Provide a measurable amount of time that automation would save.
+      placeholder: e.g., This task is currently performed 500 times / week, taking 10 minutes on average per task, resulting in a cost of 5000 minutes / week.
+    validations:
+      required: true
+  - type: textarea
+    id: impact-increasing
+    attributes:
+      label: Is the impact expected to grow over time?
+      description: Describe how the automation's impact will change over time, in measurable terms.
+      placeholder: e.g., Task volume is expected to double by July 2022. Without automation, we would need 2 more full time employees to meet this demand.
+  - type: textarea
+    id: business-process
+    attributes:
+      label: Current Business Process
+      description: |+
+        Describe the current business process in as much detail as possible.
+        If you have any documents or diagrams describing the process, provide links to them.
+    validations:
+      required: true
+  - type: input
+    id: last-change
+    attributes:
+      label: How many times has the process been run since it was last changed?
+      placeholder: e.g., 1000
+    validations:
+      required: true
+  - type: textarea
+    id: future-changes
+    attributes:
+      label: Are there planned future changes?
+      placeholder: e.g., We will be onboarding a new warehouse on 2022-08-01.
+    validations:
+      required: true
+  - type: input
+    id: vault-link
+    attributes:
+      label: Vault Link
+      description: If this automation request is related to a larger Vault project, provide a link to the project.
+      placeholder: e.g., https://vault.shopify.io/projects/1
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Timeline
+      description: Is this integration time sensitive? If so, why?
+      placeholder: e.g., Our contract with the supplier renews January 1, 2023.
