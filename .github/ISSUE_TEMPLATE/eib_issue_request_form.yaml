@@ -1,7 +1,6 @@
-name: New Integration Request
-description: Request a new integration that will connect two or more systems.
-title: "[New Integration]: "
-labels: [ "new integration" ]
+name: EIB Request Form
+description: Mass data changes via EIB uploads.
+title: "[EIB]: "
 body:
   - type: markdown
     attributes:
