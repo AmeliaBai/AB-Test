@@ -2,12 +2,10 @@ name: EIB Request Form
 description: Mass data changes via EIB uploads.
 title: "[EIB]: "
 body:
-  - type: markdown
+- type: markdown
     attributes:
       value: |+
-        This form is for requesting the development of a new integration that will connect two or more business systems.
-
-        Please fill out the fields with as much detail as possible, ensuring that there is sufficient context for the System Integrations team to understand your area of the business, your process, and the impact you're trying to make.
+        This form is for mass data changes via EIB uploads.
         <br />
   - type: input
     id: team
