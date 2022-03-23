@@ -1,0 +1,71 @@
+name: EIB Request Form
+description: Mass data changes via EIB uploads. 
+title: "[EIB]: "
+labels:
+body:
+- type: markdown
+    attributes:
+      value: |+
+        This form is for mass data changes via EIB uploads.
+        <br />
+ - type: input
+    id: Requester
+    attributes:
+      label: Requester
+      description: Who requested this change?
+      placeholder: Finance..
+    validations:
+      required: true
+- type: textarea
+    id: TLDR
+    attributes:
+      label: TLDR
+      description: What is the TLDR of this change?
+      placeholder: Insert text here...
+    validations:
+      required: true
+ - type: input
+    id: Deadline
+    attributes:
+      label: Deadline
+      description: What is the deadline for this request?
+      placeholder: Insert text/date here...
+    validations:
+      required: true
+  - type: dropdown
+    id: Template
+    attributes:
+      label: Template
+      description: Which EIB template are you using?
+      options:
+        - "Change Org Assignment"
+        - "Request Compensation Change"
+        - "Add Stock Grant"
+        - "Change Job"
+        - "Hire"
+        - "Edit Position"
+        - "Other"
+    validations:
+      required: true
+  - type: input
+    id: Volume
+    attributes:
+      label: Volume
+      description: How many changes are you making in one upload?
+      placeholder: eg.1200
+    validations:
+      required: true
+- type: checkboxes
+  id: Inform other parties
+  attributes:
+    label: Please notify all teams who will be affected by this change prior to making any changes in production
+    description: Best practice for when to notify teams:Will this cause a large number of transactions to be sent over an existing integration? Will this result in any rules changes or refactoring in other systems? Will this cause a large number of errors to appear on an audit performed by a specific team?  
+    options:
+      - label: IT team (@ Shopify/okta-team)
+      - label: Vault team (@ Shopify/vault-tools)
+      - label: People Analytics (@ Shopify/people-analytics)
+      - label: @ Shopify/it-device-identity
+      - label: Compensation Team
+      - label: Finance Team
+     validations:
+      required: true
