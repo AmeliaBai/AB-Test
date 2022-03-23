@@ -2,14 +2,6 @@ name: EIB Request Form
 description: Mass data changes via EIB uploads. 
 title: "[EIB]: "
 body:
- - type: input
-    id: Requester
-    attributes:
-      label: Requester
-      description: Who requested this change?
-      placeholder: Finance..
-    validations:
-      required: true
 - type: textarea
     id: TLDR
     attributes:
