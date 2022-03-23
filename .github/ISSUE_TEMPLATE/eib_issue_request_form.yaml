@@ -60,6 +60,11 @@ body:
       label: Template
       description: Please notify all teams who will be affected by this change prior to making any changes in production
       options:
-        - label: Request Compensation Change
+        - label: IT team (@ Shopify/okta-team)
+        - label: Vault team (@ Shopify/vault-tools)
+        - label: People Analytics (@ Shopify/people-analytics)
+        - label: @ Shopify/it-device-identity
+        - label: Compensation Team
+        - label: Finance Team
     validations:
       required: true
