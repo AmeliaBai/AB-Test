@@ -60,11 +60,6 @@ body:
       label: Template
       description: Please notify all teams who will be affected by this change prior to making any changes in production
       options:
-        - "Request Compensation Change"
-        - "Add Stock Grant"
-        - "Change Job"
-        - "Hire"
-        - "Edit Position"
-        - "Other"
+        - label: Request Compensation Change
     validations:
       required: true
