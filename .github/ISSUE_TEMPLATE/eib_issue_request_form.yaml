@@ -7,11 +7,11 @@ body:
       value: |+
         This form is for mass data changes via EIB uploads.
         <br />
-   - type: input
-      id: Requester
-      attributes:
-        label: Requester
-        description: Who requested this change?
-        placeholder: Finance..
+  - type: input
+    id: Requester
+    attributes:
+      label: Requester
+      description: Who requested this change?
+      placeholder: Finance..
       validations:
-        required: true
+      required: true
