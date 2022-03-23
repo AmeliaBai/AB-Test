@@ -3,11 +3,6 @@ description: Mass data changes via EIB uploads.
 title: "[EIB]: "
 labels:
 body:
-- type: markdown
-    attributes:
-      value: |+
-        This form is for mass data changes via EIB uploads.
-        <br />
  - type: input
     id: Requester
     attributes:
