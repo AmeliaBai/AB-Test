@@ -54,3 +54,17 @@ body:
       placeholder: eg.1200
     validations:
       required: true
+  - type: checkboxes
+    id: Inform other parties
+    attributes:
+      label: Template
+      description: Please notify all teams who will be affected by this change prior to making any changes in production
+      options:
+        - "Request Compensation Change"
+        - "Add Stock Grant"
+        - "Change Job"
+        - "Hire"
+        - "Edit Position"
+        - "Other"
+    validations:
+      required: true
