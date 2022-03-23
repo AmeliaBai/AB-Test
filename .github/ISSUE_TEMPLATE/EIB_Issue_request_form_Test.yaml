@@ -1,7 +1,6 @@
 name: EIB Request Form
 description: Mass data changes via EIB uploads. 
 title: "[EIB]: "
-labels:
 body:
  - type: input
     id: Requester
